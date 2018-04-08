@@ -1,0 +1,33 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
+  <div class="f1b">
+    <div class="Aligner-item Aligner-item--center">
+      <img src="assets/imgs/volunteer.png">
+      <div class="Aligner-item Aligner-item--center"></div>
+    </div>
+  </div>
+</div>
+
+<ion-header>
+    <ion-navbar color="primary">
+      <ion-title>Login</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content class="tutorial-page">
+  
+    <ion-slides pager>
+      <ion-slide *ngFor="let slide of slides">
+        <div> 
+          <img [src]="slide.image" class="slide-image"/>
+        </div>
+          <h5 class="slide-title" [innerHTML]="slide.title"></h5>
+        <button ion-button (click)="halamanhome()">Login</button>
+      </ion-slide>
+    </ion-slides>
+  </ion-content>

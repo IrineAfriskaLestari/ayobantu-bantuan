@@ -1,0 +1,24 @@
+<!--
+  Generated template for the HubungiPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Hubungi</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-slides pager>
+        <ion-slide *ngFor="let slide of slides">
+          <img [src]="slide.image" class="slide-image"/>
+          <button ion-button (click)="halamanhome()">Hubungkan ke Grup Whatsapp</button>
+        </ion-slide>
+      </ion-slides>
+
+</ion-content>

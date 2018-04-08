@@ -1,0 +1,51 @@
+page-statusbantuan {
+    .SwipedTabs-indicatorSegment
+    {
+        -webkit-transition: 0.3s all;
+        -moz-transition:  0.3s all;
+        -o-transition:  0.3s all;
+        transition:  0.3s all;
+        transform-origin: top 0 left 0;
+        height: 1px;
+	    position: relative;
+	    top: -2px;
+	    background-color: black !important;
+    }
+    .SwipedTabs-tabs ion-segment-button
+    {
+    	border:none !important;
+    	color:gray!important;
+    	background-color:white!important;
+    }
+     .SwipedTabs-tabs ion-segment-button.SwipedTabs-activeTab
+    {
+        color:black !important;
+    }
+    .SwipedTabs-tabs
+    {
+    	border-bottom: solid 1px #e6e6e6  !important;
+    }
+
+    .body {
+        cursor: url('http://ionicframework.com/img/finger.png'), auto;
+    }
+    
+    .header .col {
+        background-color:rgb(199, 195, 195);
+    }
+    
+    .col {
+        border: solid 1px grey;
+        max-width :40% !important;
+        border-bottom-style: none;
+        border-right-style: none;
+    }
+    
+    .col:last-child {
+        border-right: solid 1px grey;
+    }
+    
+    .row:last-child .col {
+        border-bottom: solid 1px grey;
+    }
+}

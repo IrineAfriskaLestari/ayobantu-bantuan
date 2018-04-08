@@ -1,0 +1,79 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Inventaris Barang
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <div>
+        
+      </div>
+      <button ion-button (click)="halamantambahpenyumbang()">Tambah Penyumbang</button>
+    <div>
+
+    </div>
+    <h6 align="center">Barang Tersedia di Posko <br> Penerimaan Bantuan</h6>
+    <div>
+    <div>
+        <div>
+            <div>
+          <div class="row header">
+            <div class="col" align="center">No</div>
+            <div class="col" align="center">Nama Barang</div>
+            <div class="col" align="center">Jumlah</div>
+            
+          </div>
+        </div>
+    </div>
+  </div>
+  </div>
+    <div class="row" ng-repeat="data in ctrl.data" (click)="openMenu()">
+      <div class="col">1</div>
+      <div class="col">Beras</div>
+      <div class="col">100</div>
+      </div>
+    <div class="row" ng-repeat="data in ctrl.data">
+        <div class="col">2</div>
+        <div class="col">Selimut</div>
+        <div class="col">200</div>
+        
+      </div>
+      <div class="row" ng-repeat="data in ctrl.data">
+          <div class="col">3</div>
+          <div class="col">Mie Instant</div>
+          <div class="col">100</div>
+          
+        </div>
+        <div class="row" ng-repeat="data in ctrl.data">
+            <div class="col">4</div>
+            <div class="col">Pakaian</div>
+            <div class="col">100</div>
+            
+          </div>
+          <div class="row" ng-repeat="data in ctrl.data">
+              <div class="col">5</div>
+              <div class="col">Kasur</div>
+              <div class="col">400</div>
+              
+            </div>
+            <div class="row" ng-repeat="data in ctrl.data">
+                <div class="col">6</div>
+                <div class="col">Obat-obatan</div>
+                <div class="col">50</div>
+                
+              </div>
+              <div class="row" ng-repeat="data in ctrl.data">
+                  <div class="col">7</div>
+                  <div class="col">Tikar</div>
+                  <div class="col">100</div>
+                  
+                </div>
+                <div class="row" ng-repeat="data in ctrl.data">
+                    <div class="col">8</div>
+                    <div class="col">Bantal</div>
+                    <div class="col">100</div>
+                    
+                  </div>
+</ion-content>
